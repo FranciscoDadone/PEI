@@ -23,8 +23,6 @@ jobs:
       - run:
           name: install dependencies
           command: python PEI.py
-            python3 -m venv venv
-            . venv/bin/activate
 
       # run tests!
       # this example uses Django's built-in test-runner
@@ -34,7 +32,6 @@ jobs:
       - run:
           name: run tests
           command: python PEI.py
-            . venv/bin/activate
 
       - store_artifacts:
           path: test-reports
